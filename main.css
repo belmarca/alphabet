@@ -1,3 +1,10 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: none;
+}
+
 .jeu {
     margin-left: 10vw;
     margin-right: 10vw;
@@ -11,15 +18,7 @@
     margin-bottom: 10vh;
 }
 
-#message {
-    font-size: 60px;
-}
-
 #solution {
-    margin-bottom: 10vh;
-}
-
-#alphabet {
     margin-bottom: 10vh;
 }
 
@@ -60,4 +59,35 @@
     width: 35px;
     height: 35px;
     user-select: none;
+}
+
+@media screen and (max-width: 480px) {
+    .jeu {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+        text-align: center;
+    }
+
+    #question {
+        font-size: 60px;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    .case {
+        font-size: 28px;
+        margin: 5px 5px 5px 5px;
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .lettre {
+        font-size: 20px;
+        margin: 2px 2px 2px 2px;
+        width: 30px;
+        height: 30px;
+        user-select: none;
+    }
 }
